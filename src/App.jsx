@@ -39,8 +39,7 @@ import "./App.css";
  * Please update the following values with your actual tokens.
  * Instructions on how to obtain them: https://ckeditor.com/docs/trial/latest/guides/real-time/quick-start.html
  */
-const LICENSE_KEY =
-  "TFAvdUJ3b0ZnQStZbXdNb2NZMUZVRDM2bzZ4MjZLQmN5U1NscGN0MUUxL25zRFgzY1lEQjFxQTNoTldlQ1E9PS1NakF5TkRBNU1UUT0=";
+const LICENSE_KEY = import.meta.env.VITE_CKEDITOR_LICENSE_KEY;
 
 export default function App() {
   const editorContainerRef = useRef(null);
